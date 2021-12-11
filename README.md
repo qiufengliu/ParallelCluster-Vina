@@ -1,25 +1,24 @@
 ParallelCluster-Vina
 Run AutoDock Vina with Amazon ParallelCluster
 1. Install Amazon ParallelCluster
-[//]: # (哈哈我是注释，不会在浏览器中显示。)
 SSH登录PCluster客户端, 安装所需软件
 sudo yum -y install python3 python3-pip
-#使用pip 安装Parallel Cluster
+使用pip 安装Parallel Cluster
 python3 -m pip install "aws-parallelcluster" --upgrade --user
-#Install Node Version Manager and Node.js (required due to AWS Cloud Development Kit (CDK) 
+Install Node Version Manager and Node.js (required due to AWS Cloud Development Kit (CDK) 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 chmod ug+x ~/.nvm/nvm.sh
 source ~/.nvm/nvm.sh
 nvm install node
 node --version
-#如果因为firewall的问题导致无法安装NodeJS可以使用如下方式手动安装
+如果因为firewall的问题导致无法安装NodeJS可以使用如下方式手动安装
 wget https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-x64.tar.xz
 tar -xvf node-v16.13.0-linux-x64.tar.xz
 sudo mv node-v16.13.0-linux-x64 /usr/local/node
 echo "export PATH=$PATH:/usr/local/node/bin" >>~/.bashrc
-#激活
+激活
 source ~/.bashrc
-#检查版本
+检查版本
 node -v
 npm -v
 2. 准备PCluster集群配置文件
