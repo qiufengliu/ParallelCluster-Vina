@@ -28,12 +28,12 @@ npm -v
 ```
 ### 准备PCluster集群配置文件
 #### 命令行方式
-（https://docs.aws.amazon.com/zh_cn/parallelcluster/latest/ug/pcluster.configure-v3.html）
+命令行方式配置参考[教程]（https://docs.aws.amazon.com/zh_cn/parallelcluster/latest/ug/pcluster.configure-v3.html）
 ```shell
 pcluster configure --region us-west-2 --config config.yaml
 ```
 #### 手动方式
-集群的文件可以参考链接
+集群的文件可以参考[链接]
 （https://docs.aws.amazon.com/zh_cn/parallelcluster/latest/ug/cluster-configuration-file-v3.html）
 ### 创建Pcluster集群
 ```shell
