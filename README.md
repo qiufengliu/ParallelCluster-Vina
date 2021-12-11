@@ -32,4 +32,4 @@ https://docs.aws.amazon.com/zh_cn/parallelcluster/latest/ug/cluster-configuratio
 pcluster create-cluster --cluster-configuration config.yaml --cluster-name hpc --rollback-on-failure false 
 4. 登录集群节点
 pcluster ssh --cluster-name hpc -i key.pem
-
+5. 创建FSx for Lustre文件系统
