@@ -1,7 +1,8 @@
 ParallelCluster-Vina
 Run AutoDock Vina with Amazon ParallelCluster
 1. Install Amazon ParallelCluster
-#SSH登录PCluster客户端, 安装所需软件
+[//]: # (哈哈我是注释，不会在浏览器中显示。)
+SSH登录PCluster客户端, 安装所需软件
 sudo yum -y install python3 python3-pip
 #使用pip 安装Parallel Cluster
 python3 -m pip install "aws-parallelcluster" --upgrade --user
