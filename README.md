@@ -33,3 +33,5 @@ pcluster create-cluster --cluster-configuration config.yaml --cluster-name hpc -
 4. 登录集群节点
 pcluster ssh --cluster-name hpc -i key.pem
 5. 创建FSx for Lustre文件系统
+6. 提前下载工具vina,Open Babel, MGLTools到/fsx目录
+source ~/.nvm/nvm.sh
